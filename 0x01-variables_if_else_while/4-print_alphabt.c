@@ -4,6 +4,7 @@
  * main -prints alphabet, except q and e
  * in lowercase, followed by a new line
  */
+
 int main(void)
 {
 	char ch = 'a';
