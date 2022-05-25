@@ -1,9 +1,12 @@
 #include "holberton.h"
 
 /**
- * print_alphabet_x10 - prints the alphabet 10 times, in lowercase,
- * followed by a new line.
+ * main - check the code
+ *
+ * Return: Always 0.
+ * 
  */
+
 void print_alphabet_x10(void)
 {
 	char ch;
