@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * -islower - prints alphabet
+ * _islower - prints alphabet
  *
+ * @c: input
  *
  * Return: Always 0.
  */
