@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet - prints alphabet in lowercase, followed by
+ * new line
+ *
+ * Description: 
  *
  * Return: Always 0.
  */
@@ -11,7 +14,7 @@ void print_alphabet(void)
 	char ch;
 
 	ch = 'a';
-	
+
 	while (ch <= 'z')
 	{
 		_putchar(ch);
