@@ -4,8 +4,6 @@
  * print_alphabet - prints alphabet in lowercase, followed by
  * new line
  *
- * Description: 
- *
  * Return: Always 0.
  */
 
