@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - prints alphabet
+ * -islower - prints alphabet
  *
  *
  * Return: Always 0.
