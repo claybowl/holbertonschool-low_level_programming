@@ -2,7 +2,9 @@
 
 /**
 * mul - function multiplies two integers
-* #a: a is an integer
+* @a: a is an integer
+* @b: b is an integer
+* Return: return j for success
 */
 
 int mul(int a, int b)
