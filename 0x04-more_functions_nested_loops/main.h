@@ -1,3 +1,9 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h>
+
+
 void print_triangle(int size);
 
 void print_numbers(void);
@@ -29,3 +35,5 @@ void print_triangle(int size);
 */
 
 void print_triangle(int size);
+
+#endif /* MAIN_H */
