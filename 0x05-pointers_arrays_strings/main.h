@@ -1,3 +1,17 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+/**
+* includes
+*/
+
+#include <unistd.h>
+#include <stdio.h>
+
+/**
+* prototypes
+*/
+
 int _putchar(char c)
 
 void reset_to_98(int *n);
@@ -19,3 +33,5 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 
 char *_strcpy(char *dest, char *src);
+
+#endif /* MAIN_H */
