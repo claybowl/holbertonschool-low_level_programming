@@ -1,3 +1,5 @@
+void print_triangle(int size);
+
 void print_numbers(void);
 
 int _isupper(int c);
@@ -19,6 +21,8 @@ void print_line(int n);
 void print_diagonal(int n);
 
 void print_square(int size);
+
+void print_triangle(int size);
 
 /**
 * Problem #9 here. Doesn't seem to include a prototype
