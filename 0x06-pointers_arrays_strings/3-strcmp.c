@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
-* _strcmp - copies a string
-* @dest: destination string
-* @src: source strin
-* @n: number of bites from src
+* _strcmp - compares two strings
+* @s1: string
+* @s2: source strin
+*
 * Return: a pointer to the resulting string dest
 */
 
