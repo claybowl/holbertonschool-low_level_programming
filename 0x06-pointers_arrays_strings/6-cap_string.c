@@ -3,21 +3,37 @@
 /**
 * cap_string - capitalizes all words of a string
 *
-* @x: string variable
+* @s: string variable
 *
 * Return: a string with all characters capitalized.
 */
-char *cap_string(char *x)
+char *cap_string(char *j)
 {
-	int c = 0;
+	int e;
 
-	while (x[c] != '\0')
+	for (e = 0; j[e] != '\0'; e++)
 	{
-		if (x[c] >= 'a' && x[c] <= 'z')
+		if (j[e] >= 'a' && j[e] <= 'z')
 		{
-			x[c] = x[c] - 32;
+		if (j[e - 1] == ' ' ||
+		j[e - 1] == '\t' ||
+		j[e - 1] == '\n' ||
+		j[e - 1] == ',' ||
+		j[e - 1] == ';' ||
+		j[e - 1] == '.' ||
+		j[e - 1] == '!' ||
+		j[e - 1] == '?' ||
+		j[e - 1] == '"' ||
+		j[e - 1] == '(' ||
+		j[e - 1] == ')' ||
+		j[e - 1] == '{' ||
+		j[e - 1] == '}' ||
+		e == 0)
+		{
+			j[e] = j[e] - 32;
 		}
-		c++;
+		}
 	}
-	return (x);
+
+return (j);
 }
