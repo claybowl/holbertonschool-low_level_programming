@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <stdio.h>
 
+#define EXIT_SUCCESS 0
+
 /* prototypes */
 
 int _putchar(char c);
