@@ -4,32 +4,17 @@
 
 /**
  * print_dog - prints a struct dog
- * @d: points to structure variable dog
- * Return: void
+ * @d: struct dog to print
  */
-
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
-	{
 		return;
-	}
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+
 	if (d->name == NULL)
-	{
-		name = "(nil)";
-	}
-	if (d->age == NULL)
-	{
-		age = "(nil)";
-	}
+		d->name = "(nil)";
 	if (d->owner == NULL)
-	{
-		owner = "(nil)";
-	}
-	printf("Name: %s\n", d->name);
-	printf("Age: %f\n", d->age);
-	printf("Owner: %s\n", d->owner);
+		d->owner = "(nil)";
+
+	printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner);
 }
