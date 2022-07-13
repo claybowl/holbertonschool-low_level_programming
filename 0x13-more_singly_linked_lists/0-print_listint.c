@@ -11,8 +11,8 @@ size_t print_listint(const listint_t *head)
 
 	unsigned int count = 0;
 	const listint_t *current = head;
-	
-	
+
+
 	while (current != NULL)
 	{
 		count++;
