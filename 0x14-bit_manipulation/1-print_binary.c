@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
-*  -
-* @
-* Return:
+* print_binary - function that prints the binary representation of a number
+* @n: integer being fed into function to be printed
+* Return: 0.
 */
 
 void print_binary(unsigned long int n)
