@@ -3,12 +3,30 @@
 #include "main.h"
 
 /**
+* _strlen - returns the length of a string
+* @s: character
+*
+* Return: Always 0 (Success)
+*/
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*s != '\0')
+	{
+		len++;
+		s++;
+	}
+
+	return (len);
+}
+
+/**
 * create_file - creates a file
 * @filename: filenmae
 * @text_content: NULL terminated string to write to the file
 * Return: 1 on succes, -1 on failure
 */
-
 int create_file(const char *filename, char *text_content)
 {
 	int fd, len;
@@ -32,24 +50,4 @@ int create_file(const char *filename, char *text_content)
 
 	close(fd);
 	return (1);
-}
-
-/**
-* _strlen - returns the length of a string
-* @s: character
-*
-* Return: Always 0 (Success)
-*/
-
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*s != '\0')
-	{
-		len++;
-		s++;
-	}
-
-	return (len);
 }
