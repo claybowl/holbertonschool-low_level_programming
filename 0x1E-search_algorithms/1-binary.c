@@ -24,7 +24,7 @@ void print_array(const int *array, size_t size)
 /**
  * binary_search - Uses binary search to find value in a sorted array of ints
  *
- * @array: Pointer to array to seach
+ * @array: Pointer to array to search
  * @size: Size of array
  * @value: Value for which to search
  *
@@ -32,14 +32,14 @@ void print_array(const int *array, size_t size)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i, right = size;
-	size_t left = 0;
+	size_t i, sub_size = size;
+	size_t sub_start = 0;
 
-	while (array && right > 0)
+	while (array && sub_size > 0)
 	{
 		printf("Searching in array: ");
-		print_array(&array[left], right);
-		i = (right - 1) / 2 + left;
+		print_array(&array[sub_start], sub_size);
+		i = (sub_size - 1) / 2 + sub_start;
 
 		if (array[i] == value)
 		{
@@ -47,12 +47,12 @@ int binary_search(int *array, size_t size, int value)
 		}
 		else if (array[i] < value)
 		{
-			left = i + 1;
-			right /= 2;
+			sub_start = i + 1;
+			sub_size /= 2;
 		}
 		else if (array[i] > value)
 		{
-			right = (left - 1) / 2;
+			sub_size = (sub_size - 1) / 2;
 		}
 	}
 	return (-1);
