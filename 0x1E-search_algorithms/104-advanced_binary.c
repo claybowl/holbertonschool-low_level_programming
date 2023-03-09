@@ -10,25 +10,28 @@
 */
 int advanced_binary(int *array, size_t size, int value)
 {
+	int middle;
+	int result;
 	if (array == NULL || size == 0)
 	{
 		return -1;
 	}
-	int middle = size / 2;
+	middle = size / 2;
 	if (array[middle] == value)
 	{
 		return middle;
 	}
 	else if (array[middle] > value)
 	{
-		// search in left subarray
+		int i;
+		/* search in left subarray */
 		printf("Searching in left subarray: ");
-		for (int i = 0; i < middle; i++)
+		for (i = 0; i < middle; i++)
 		{
 			printf("%d ", array[i]);
 		}
 		printf("\n");
-		int result = advanced_binary(array, middle, value);
+		result = advanced_binary(array, middle, value);
 		if (result == -1)
 		{
 			return -1;
@@ -40,14 +43,16 @@ int advanced_binary(int *array, size_t size, int value)
 	}
 	else
 	{
-		// search in right subarray
+		int i;
+		int result;
+		/* search in right subarray */
 		printf("Searching in right subarray: ");
-		for (int i = middle + 1; i < size; i++)
+		for (i = middle + 1; (size_t)i < size; i++)
 		{
 			printf("%d ", array[i]);
 		}
 		printf("\n");
-		int result = advanced_binary(array + middle + 1, size - middle - 1, value);
+		result = advanced_binary(array + middle + 1, size - middle - 1, value);
 		if (result == -1)
 		{
 			return -1;
