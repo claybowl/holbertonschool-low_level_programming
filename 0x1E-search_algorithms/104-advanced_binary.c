@@ -23,12 +23,15 @@ int advanced_binary(int *array, size_t size, int value)
 	}
 	else if (array[middle] > value)
 	{
-		int i;
+		int i = 0;
 		/* search in left subarray */
 		printf("Searching in left subarray: ");
-		for (i = 0; i < middle; i++)
+		while (i < middle)
 		{
-			printf("%d ", array[i]);
+			printf("%d", array[i]);
+			if (i < middle - 1)
+				printf(", ");
+			i++;
 		}
 		printf("\n");
 		result = advanced_binary(array, middle, value);
@@ -43,13 +46,16 @@ int advanced_binary(int *array, size_t size, int value)
 	}
 	else
 	{
-		int i;
+		size_t i = middle + 1;
 		int result;
 		/* search in right subarray */
 		printf("Searching in right subarray: ");
-		for (i = middle + 1; (size_t)i < size; i++)
+		while (i < size)
 		{
-			printf("%d ", array[i]);
+			printf("%d", array[i]);
+			if (i < size - 1)
+				printf(", ");
+			i++;
 		}
 		printf("\n");
 		result = advanced_binary(array + middle + 1, size - middle - 1, value);
