@@ -22,7 +22,7 @@ void print_array(const int *array, size_t size)
 }
 
 /**
- * binary_recursion - Uses binary search to find value in a sorted array of ints
+ * binary_recursion - Uses binary search to find value
  *
  * @array: Pointer to array to search
  * @left: Left index of array
